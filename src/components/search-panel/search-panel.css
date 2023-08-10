@@ -1,20 +1,8 @@
-.btn-group {
+.search-panel {
   margin-top: 30px;
   padding: 25px;
   background-color: #293133;
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
   color: #fff;
-}
-
-.active {
-  color: #3ee07c;
-}
-
-.completed {
-  color: #e03e3e;
-}
-
-.archive {
-  color: #843ee0;
 }

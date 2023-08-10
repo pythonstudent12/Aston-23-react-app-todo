@@ -1,13 +1,16 @@
+import { Component } from "react";
 import "./app-info.css";
 
-const AppInfo = () => {
-  const classs = "app-info" + "zector";
+class AppInfo extends Component {
+  //const classs = "app-info" + "zector";
 
-  return (
-    <div className="app-info angst">
-      <h1>ToDO List</h1>
-    </div>
-  );
-};
+  render() {
+    return (
+      <div className="app-info angst">
+        <h1>ToDO List</h1>
+      </div>
+    );
+  }
+}
 
 export default AppInfo;

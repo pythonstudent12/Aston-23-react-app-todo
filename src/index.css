@@ -12,24 +12,6 @@ code {
     monospace;
 }
 
-/* @font-face {
-  font-family: "wide-dark";
-  src: local("wide-dark"),
-    url(./fonts/wide-dark/MursGothic-WideDark.ttf) format("truetype");
-}
-
-.font-wide-dark {
-  font-family: "wide-dark";
-} */
-
-/* @font-face {
-  font-family: "zector";
-  src: local("zector"), url(./fonts/zector/Zector.ttf) format("truetype");
-}
-
-.zector {
-  font-family: "zector";
-} */
 @font-face {
   font-family: "angst";
   src: local("angst"),
