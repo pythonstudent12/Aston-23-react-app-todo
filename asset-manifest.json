@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Aston-23-react-app-todo/static/css/main.493cfe3c.chunk.css",
+    "main.js": "/Aston-23-react-app-todo/static/js/main.67d04b13.chunk.js",
+    "main.js.map": "/Aston-23-react-app-todo/static/js/main.67d04b13.chunk.js.map",
+    "runtime-main.js": "/Aston-23-react-app-todo/static/js/runtime-main.d3a353bd.js",
+    "runtime-main.js.map": "/Aston-23-react-app-todo/static/js/runtime-main.d3a353bd.js.map",
+    "static/js/2.13b656f1.chunk.js": "/Aston-23-react-app-todo/static/js/2.13b656f1.chunk.js",
+    "static/js/2.13b656f1.chunk.js.map": "/Aston-23-react-app-todo/static/js/2.13b656f1.chunk.js.map",
+    "index.html": "/Aston-23-react-app-todo/index.html",
+    "static/css/main.493cfe3c.chunk.css.map": "/Aston-23-react-app-todo/static/css/main.493cfe3c.chunk.css.map",
+    "static/js/2.13b656f1.chunk.js.LICENSE.txt": "/Aston-23-react-app-todo/static/js/2.13b656f1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Aston-23-react-app-todo/static/media/Legal Vandal Stencil.10e503e1.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3a353bd.js",
+    "static/js/2.13b656f1.chunk.js",
+    "static/css/main.493cfe3c.chunk.css",
+    "static/js/main.67d04b13.chunk.js"
+  ]
+}
