@@ -1,11 +1,33 @@
-import { Component } from "react";
+import { Component, Button, createContext } from "react";
 import AppInfo from "../app-info/app-info";
 import AppFilter from "../app-filter/app-filter";
 import ToDoList from "../todo-list/todo-list";
 import ToDoAddForm from "../todo-add-form/todo-add-form";
 import SearchPanel from "../search-panel/search-panel";
+import { TodoContext } from "../themeContext/themeContext";
 
 import "./app.css";
+
+const TodoConsumer = TodoContext.Consumer;
+
+const themes = {
+  light: {
+    foreground: "#000000",
+    background: "#eeeeee",
+  },
+  dark: {
+    foreground: "#293133",
+    background: "#293133",
+  },
+};
+
+function Parents(props) {
+  return (
+    <div>
+      <AppInfo />
+    </div>
+  );
+}
 
 class App extends Component {
   constructor(props) {
@@ -39,9 +61,17 @@ class App extends Component {
       ],
       term: "",
       filter: "all",
+      theme: themes.dark,
+      toggleTheme: this.toggleTheme,
     };
     this.maxId = JSON.parse(window.localStorage.getItem("newOrderNumber")) || 4;
   }
+
+  toggleTheme = () => {
+    this.setState((state) => ({
+      theme: state.theme === themes.dark ? themes.light : themes.dark,
+    }));
+  };
 
   onDelete = (id) => {
     const newArr = this.state.data.filter((item) => item.id !== id);
@@ -67,7 +97,7 @@ class App extends Component {
       },
       {
         name: "Погулять с собакой",
-        description: "",
+        description: "Вечером",
         active: true,
         completed: false,
         archive: false,
@@ -75,7 +105,7 @@ class App extends Component {
       },
       {
         name: "Покормить кошку",
-        description: "",
+        description: "Вискас",
         active: false,
         completed: true,
         archive: false,
@@ -201,8 +231,9 @@ class App extends Component {
 
     return (
       <div className="app">
-        <AppInfo />
-
+        <TodoContext.Provider value={this.state}>
+          <Parents></Parents>
+        </TodoContext.Provider>
         <div className="search-panel">
           <SearchPanel onUpdateSearch={this.onUpdateSearch} />
           <AppFilter filter={filter} onFilterSelect={this.onFilterSelect} />
